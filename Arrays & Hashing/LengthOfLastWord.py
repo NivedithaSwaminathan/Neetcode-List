@@ -1,7 +1,7 @@
 # TO FIND THE LENGTH OF THE LAST WORD IN THE STRING
-# We traverse the string from the last character, using a flag to keep track of the first whitespace encountered.
-# If the whitespace is found before any word, then the flag is set.
-# We decrement the pointer until a word is found, then we find the length of that word until the next whitespace.
+# We traverse the string from the last character.
+# We identify if it is the first whitepace by checking wordlen is still 0, and keep decrementing i until we find a character.
+# We decrement the pointer until a word is found, then we find the length of that word until the next whitespace or end of string is reached.
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
